@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya", serif;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.container .main-menu {
+  width: 100px;
+  background: #212121;
+  height: 100vh;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* Notification section*/
+}
+
+@media (max-width: 500px) {
+  .container .main-menu {
+    width: 60px;
+  }
+  .container .main-menu:hover {
+    width: 200px !important;
+  }
+}
+
+.container .main-menu:hover {
+  width: 250px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.container .main-menu:hover .nav-text {
+  display: inline;
+}
+
+.container .main-menu:hover .notification {
+  visibility: visible;
+}
+
+.container .main-menu:hover .notification .fas {
+  left: 50%;
+}
+
+.container .main-menu .fa,
+.container .main-menu .fas,
+.container .main-menu .fab {
+  font-size: 35px;
+  width: 80px;
+  padding: 2px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container .main-menu .fa,
+  .container .main-menu .fas,
+  .container .main-menu .fab {
+    font-size: 25px;
+    width: 50px;
+  }
+}
+
+.container .main-menu .nav-text {
+  display: none;
+  width: 170px;
+  height: 60px;
+  line-height: 2.5;
+  position: absolute;
+  top: 0;
+}
+
+@media (max-width: 500px) {
+  .container .main-menu .nav-text {
+    width: 140px;
+    line-height: 2.3;
+  }
+}
+
+.container .main-menu .profile {
+  margin: 50px auto;
+  position: relative;
+}
+
+.container .main-menu .profile .nav-text {
+  line-height: 1.8;
+}
+
+.container .main-menu .profile a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.container .main-menu .profile a:hover {
+  color: #36b9cc;
+}
+
+.container .main-menu .menu li {
+  list-style: none;
+  position: relative;
+  height: 40px;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+.container .main-menu .menu li:hover {
+  background: #36b9cc;
+}
+
+.container .main-menu .menu li:hover a {
+  color: #fff;
+}
+
+.container .main-menu .menu a {
+  color: #999;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .container .main-menu .menu a {
+    font-size: 16px;
+  }
+}
+
+.container .main-menu .notification {
+  width: 220px;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+  background-color: #2a2a2a;
+  border: 1.5px solid #000;
+  visibility: hidden;
+}
+
+.container .main-menu .notification .fas {
+  width: 50px;
+  position: absolute;
+  top: -15px;
+  left: 32px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #36b9cc;
+  visibility: visible;
+}
+
+.container .main-menu .notification .fas::after {
+  content: "2";
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  padding: 2px 4px;
+}
+
+@media (max-width: 500px) {
+  .container .main-menu .notification .fas {
+    left: 18px;
+  }
+}
+
+.container .main-menu .notification .notification-text {
+  width: 90%;
+  margin: 25px auto 20px;
+  color: #fff;
+  font-style: italic;
+  letter-spacing: 2px;
+  background-color: #464545;
+  border-radius: 5px;
+  position: relative;
+}
+
+.container .main-menu .notification .notification-text p {
+  padding: 10px;
+}
+
+.container .main-menu .notification .notification-text .fa {
+  position: absolute;
+  right: 1px;
+  top: -8px;
+  font-size: 20px;
+  width: 10px;
+}
+/*# sourceMappingURL=main.css.map */
