@@ -85,6 +85,7 @@
 }
 
 .container .main-menu .profile {
+  width: 80%;
   margin: 50px auto;
   position: relative;
 }
@@ -103,12 +104,22 @@
   color: #fff;
 }
 
+.container .main-menu .menu .active {
+  background: #36b9cc;
+}
+
+.container .main-menu .menu .active a {
+  color: #fff;
+}
+
 .container .main-menu .menu li {
+  width: 80%;
+  border-radius: 5px;
   list-style: none;
   position: relative;
   height: 40px;
   padding: 5px 0;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .container .main-menu .menu li:hover {
@@ -133,7 +144,7 @@
 
 .container .main-menu .notification {
   width: 220px;
-  margin: 50px auto;
+  margin: 100px auto;
   border-radius: 10px;
   position: relative;
   background-color: #2a2a2a;
@@ -145,7 +156,7 @@
   width: 50px;
   position: absolute;
   top: -15px;
-  left: 32px;
+  left: 45px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: #36b9cc;

@@ -66,6 +66,7 @@
 
     // Profile container
     .profile {
+      width: 80%;
       margin: 50px auto;
       position: relative;
       .nav-text {
@@ -83,12 +84,20 @@
 
     //  Nav/Menu items
     .menu {
+      .active {
+        background: #36b9cc;
+        a {
+          color: #fff;
+        }
+      }
       li {
+        width: 80%;
+        border-radius: 5px;
         list-style: none;
         position: relative;
         height: 40px;
         padding: 5px 0;
-        margin: 10px 0;
+        margin: 10px auto;
         &:hover {
           background: #36b9cc;
           a {
@@ -108,7 +117,7 @@
     /* Notification section*/
     .notification {
       width: 220px;
-      margin: 50px auto;
+      margin: 100px auto;
       border-radius: 10px;
       position: relative;
       background-color: #2a2a2a;
@@ -120,7 +129,7 @@
         width: 50px;
         position: absolute;
         top: -15px;
-        left: 32px;
+        left: 45px;
         transform: translateX(-50%);
         color: #36b9cc;
         visibility: visible;
