@@ -5,7 +5,7 @@
   font-family: "Alegreya", serif;
 }
 
-.container {
+.container-c {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.container .main-menu {
+.container-c .main-menu {
   width: 100px;
   background: #212121;
   height: 100vh;
@@ -24,51 +24,52 @@
 }
 
 @media (max-width: 500px) {
-  .container .main-menu {
+  .container-c .main-menu {
     width: 60px;
   }
-  .container .main-menu:hover {
+  .container-c .main-menu:hover {
     width: 200px !important;
   }
 }
 
-.container .main-menu:hover {
+.container-c .main-menu:hover {
   width: 250px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.container .main-menu:hover .nav-text {
+.container-c .main-menu:hover .nav-text {
   display: inline;
 }
 
-.container .main-menu:hover .notification {
+.container-c .main-menu:hover .notification {
   visibility: visible;
 }
 
-.container .main-menu:hover .notification .fas {
+.container-c .main-menu:hover .notification .fas {
   left: 50%;
 }
 
-.container .main-menu .fa,
-.container .main-menu .fas,
-.container .main-menu .fab {
+.container-c .main-menu .fa,
+.container-c .main-menu .fas,
+.container-c .main-menu .fab {
   font-size: 35px;
   width: 80px;
   padding: 2px;
   text-align: center;
+  line-height: 0.7;
 }
 
 @media (max-width: 500px) {
-  .container .main-menu .fa,
-  .container .main-menu .fas,
-  .container .main-menu .fab {
+  .container-c .main-menu .fa,
+  .container-c .main-menu .fas,
+  .container-c .main-menu .fab {
     font-size: 25px;
     width: 50px;
   }
 }
 
-.container .main-menu .nav-text {
+.container-c .main-menu .nav-text {
   display: none;
   width: 170px;
   height: 60px;
@@ -78,41 +79,41 @@
 }
 
 @media (max-width: 500px) {
-  .container .main-menu .nav-text {
+  .container-c .main-menu .nav-text {
     width: 140px;
     line-height: 2.3;
   }
 }
 
-.container .main-menu .profile {
+.container-c .main-menu .profile {
   width: 80%;
   margin: 50px auto;
   position: relative;
 }
 
-.container .main-menu .profile .nav-text {
+.container-c .main-menu .profile .nav-text {
   line-height: 1.8;
 }
 
-.container .main-menu .profile a {
+.container-c .main-menu .profile a {
   color: #999;
   text-decoration: none;
   font-size: 25px;
 }
 
-.container .main-menu .profile a:hover {
+.container-c .main-menu .profile a:hover {
   color: #fff;
 }
 
-.container .main-menu .menu .active {
+.container-c .main-menu .menu .active {
   background: #36b9cc;
 }
 
-.container .main-menu .menu .active a {
+.container-c .main-menu .menu .active a {
   color: #fff;
 }
 
-.container .main-menu .menu li {
+.container-c .main-menu .menu li {
   width: 80%;
   border-radius: 5px;
   list-style: none;
@@ -122,27 +123,27 @@
   margin: 10px auto;
 }
 
-.container .main-menu .menu li:hover {
+.container-c .main-menu .menu li:hover {
   background: #36b9cc;
 }
 
-.container .main-menu .menu li:hover a {
+.container-c .main-menu .menu li:hover a {
   color: #fff;
 }
 
-.container .main-menu .menu a {
+.container-c .main-menu .menu a {
   color: #999;
   text-decoration: none;
   font-size: 20px;
 }
 
 @media (max-width: 500px) {
-  .container .main-menu .menu a {
+  .container-c .main-menu .menu a {
     font-size: 16px;
   }
 }
 
-.container .main-menu .notification {
+.container-c .main-menu .notification {
   width: 220px;
   margin: 100px auto;
   border-radius: 10px;
@@ -152,18 +153,18 @@
   visibility: hidden;
 }
 
-.container .main-menu .notification .fas {
+.container-c .main-menu .notification .fas {
   width: 50px;
   position: absolute;
   top: -15px;
-  left: 45px;
+  left: 42px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   color: #36b9cc;
   visibility: visible;
 }
 
-.container .main-menu .notification .fas::after {
+.container-c .main-menu .notification .fas::after {
   content: "2";
   font-size: 15px;
   background-color: #fff;
@@ -175,12 +176,12 @@
 }
 
 @media (max-width: 500px) {
-  .container .main-menu .notification .fas {
-    left: 18px;
+  .container-c .main-menu .notification .fas {
+    left: 25px;
   }
 }
 
-.container .main-menu .notification .notification-text {
+.container-c .main-menu .notification .notification-text {
   width: 90%;
   margin: 25px auto 20px;
   color: #fff;
@@ -191,15 +192,41 @@
   position: relative;
 }
 
-.container .main-menu .notification .notification-text p {
+.container-c .main-menu .notification .notification-text p {
   padding: 10px;
 }
 
-.container .main-menu .notification .notification-text .fa {
+.container-c .main-menu .notification .notification-text .fa {
   position: absolute;
   right: 1px;
   top: -8px;
   font-size: 20px;
   width: 10px;
+}
+
+.container-c .main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-c .main-content .card {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container-c .main-content .card .fab,
+.container-c .main-content .card .fas,
+.container-c .main-content .card .far {
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  font-size: 4em;
+  border-radius: 5px 5px 0 0;
+  background: #36b9cc;
+  color: #fff;
+}
+
+.container-c .main-content .card .fas {
+  background: #0b5964;
 }
 /*# sourceMappingURL=main.css.map */
