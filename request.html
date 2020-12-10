@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-c">
+      <!--Sidebar-->
+      <nav class="main-menu">
+        <div class="profile">
+          <a href="myaccount.html">
+            <i class="fas fa-user"></i>
+            <span class="nav-text">John Doe</span>
+          </a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="index.html">
+              <i class="fa fa-home"></i>
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="fas fa-angle-double-up"></i>
+              <span class="nav-text"> Requests </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-first-order-alt"></i>
+              <span class="nav-text">Orders</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <span class="nav-text">Invoices</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-flag"></i>
+              <span class="nav-text">ASN</span>
+            </a>
+          </li>
+        </ul>
+        <div class="notification">
+          <i class="fas fa-bell"></i>
+
+          <div class="notification-text">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div class="main-content">
+        <div class="Request-container px-4 py-4">
+          <header>
+            <h1>Requests</h1>
+            <div class="search">
+              <input type="text" placeholder="Search..." />
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </header>
+          <table class="table">
+            <tr class="table-header">
+              <th>Req No</th>
+              <th>Requester <i class="fas fa-filter"></i></th>
+              <th>Request Date</th>
+              <th>Items</th>
+              <th>Total</th>
+              <th>Action</th>
+              <th>Thing 6</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>some data</td>
+              <td>other data</td>
+              <td>ye?</td>
+              <td>nay?</td>
+              <td>smashing!</td>
+              <td>yeah!</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>moar data</td>
+              <td>oh</td>
+              <td>bleep</td>
+              <td>bloop</td>
+              <td>blarp</td>
+              <td>yadig?</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>evn mor dataz</td>
+              <td>yup!</td>
+              <td>boop</td>
+              <td>bip</td>
+              <td>bop</td>
+              <td>yeah!</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>final data</td>
+              <td>yeah!</td>
+              <td>brap</td>
+              <td>bwamp</td>
+              <td>bwarp</td>
+              <td>beep</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

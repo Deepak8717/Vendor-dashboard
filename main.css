@@ -5,6 +5,18 @@
   font-family: "Alegreya", serif;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  border-top: 2px solid #999 !important;
+}
+
 .container-c {
   width: 100%;
   display: -webkit-box;
@@ -16,8 +28,11 @@
 .container-c .main-menu {
   width: 100px;
   background: #212121;
-  height: 100vh;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   /* Notification section*/
@@ -36,6 +51,10 @@
   width: 250px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.container-c .main-menu:hover .main-content {
+  left: 10%;
 }
 
 .container-c .main-menu:hover .nav-text {
@@ -92,7 +111,7 @@
 }
 
 .container-c .main-menu .profile .nav-text {
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .container-c .main-menu .profile a {
@@ -103,6 +122,25 @@
 
 .container-c .main-menu .profile a:hover {
   color: #fff;
+}
+
+.container-c .main-menu .profile a.active {
+  color: #fff;
+}
+
+.container-c .main-menu .profile a.active .fas {
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  line-height: 1.4;
+  margin-left: 15px;
+  margin-right: 5px;
+  background: #36b9cc;
+  color: #fff;
+}
+
+.container-c .main-menu .profile a.active .nav-text {
+  line-height: 2.2;
 }
 
 .container-c .main-menu .menu .active {
@@ -205,8 +243,275 @@
 }
 
 .container-c .main-content {
-  width: 90%;
+  width: 80%;
+  position: relative;
   margin: 0 auto;
+}
+
+.container-c .main-content .account-container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container-c .main-content .account-container .profile-pic {
+  width: 150px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container-c .main-content .account-container .profile-pic img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.container-c .main-content .account-container .profile-pic .profile-info {
+  color: #4b4b4b;
+}
+
+.container-c .main-content .account-container .profile-pic .profile-info h2,
+.container-c .main-content .account-container .profile-pic .profile-info p {
+  line-height: 1;
+  margin: 0;
+}
+
+.container-c .main-content .account-container .profile-pic .profile-info .fas {
+  width: 40px;
+  height: 20px;
+  color: #36b9cc !important;
+  line-height: 2;
+  font-size: 22px;
+}
+
+.container-c .main-content .account-container .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-c .main-content .account-container .menu > div {
+  width: 200px;
+  height: 200px;
+  border-radius: 0px 25% 0 30%;
+  background: #eaeaea;
+  margin: 10px;
+  font-size: 25px;
+  -webkit-box-shadow: -5px 0px 5px #7c7b7b;
+          box-shadow: -5px 0px 5px #7c7b7b;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container-c .main-content .account-container .menu > div:hover {
+  background: #36b9cc;
+  color: #fff;
+}
+
+.container-c .main-content .account-container .menu > div i {
+  display: block;
+}
+
+.container-c .main-content .profile-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-c .main-content .profile-container .profile-pic {
+  width: 150px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.container-c .main-content .profile-container .profile-pic img {
+  width: 50%;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+}
+
+.container-c .main-content .profile-container .profile-pic .profile-info {
+  color: #4b4b4b;
+}
+
+.container-c .main-content .profile-container .profile-pic .profile-info h2,
+.container-c .main-content .profile-container .profile-pic .profile-info p {
+  line-height: 1;
+  margin: 0;
+}
+
+.container-c .main-content .profile-container .profile-pic .profile-info .fas {
+  width: 40px;
+  height: 20px;
+  color: #36b9cc !important;
+  line-height: 2;
+  font-size: 22px;
+}
+
+.container-c .main-content .profile-container .profile-detail {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-c .main-content .profile-container .profile-detail .progressbar {
+  width: 60%;
+  height: 20px;
+  background: #0b5964;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+.container-c .main-content .profile-container .profile-detail .profile-fields {
+  background: #f6f8f8;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.container-c .main-content .profile-container .profile-detail .profile-fields .is-readonly input {
+  border: none;
+  background: none;
+}
+
+.container-c .main-content .profile-container .profile-detail .profile-fields .custom-col::after {
+  content: ":";
+  font-weight: bold;
+  position: absolute;
+  right: -5px;
+}
+
+.container-c .main-content .profile-container .profile-detail .profile-fields label {
+  font-weight: bold;
+}
+
+.container-c .main-content .profile-container .profile-bottom {
+  width: 95%;
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  background: #f6f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-c .main-content .profile-container .profile-bottom button {
+  width: 80px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: #36b9cc;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.container-c .main-content .profile-container .profile-bottom button .fas {
+  background: #36b9cc;
+  color: #fff;
+  height: 30px;
+  line-height: 1.5;
+}
+
+.container-c .main-content .Request-container {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: #999;
+  color: #fff;
+}
+
+.container-c .main-content .Request-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-c .main-content .Request-container header .search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.container-c .main-content .Request-container header .search input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 22px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.container-c .main-content .Request-container header .search button {
+  width: 40px;
+  position: absolute;
+  right: -1px;
+  top: 6px;
+  padding: 7px;
+  background: #36b9cc;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.container-c .main-content .Request-container .table {
+  color: #fff;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+.container-c .main-content .Request-container .table .table-header {
+  background: #36b9cc;
+  color: #fff;
+  font-size: 20px;
 }
 
 .container-c .main-content .card {
